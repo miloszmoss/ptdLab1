@@ -21,8 +21,8 @@ class Zad1 extends Base {
   init() {
     const { figure, imgOpts, dataArray } = this;
     this.count();
-    this.printPNG(figure, imgOpts, 'zad1.png');
-    this.printData('zad1.txt', dataArray);
+    this.printPNG(figure, imgOpts, 'charts/zad1.png');
+    this.printData('data/zad1.txt', dataArray);
   }
 }
 
