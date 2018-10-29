@@ -1,5 +1,5 @@
-# Podstawy Transmisji Danych
+# Podstawy transmisji danych
 #
-# Gr. 31A
+Gr. 31A
 #
-# Lab1 
+Lab1 
