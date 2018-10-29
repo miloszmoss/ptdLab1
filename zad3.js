@@ -2,7 +2,6 @@ const Base = require('./Base');
 class Zad3 extends Base {
   constructor() {
     super();
-    this.fs = 4;
     this.index = [];
     this.data = [];
     this.trace = {
@@ -16,15 +15,15 @@ class Zad3 extends Base {
     return Math.pow(0.8, n) - 1;
   }
   second(n) {
-    return -1.8 * n * Math.cos(16 * Math.PI * (n / this.fs) + Math.PI);
+    const fs = 4;
+    return -1.8 * n * Math.cos(16 * Math.PI * (n / fs) + Math.PI);
   }
   third(n) {
     return 0.72 * n;
   }
   fourth(n) {
-    return (
-      0.29 * Math.pow(n, 8) * Math.sin(31 * Math.PI * (n / this.fs)) + 0.55
-    );
+    const fs = 4;
+    return 0.29 * Math.pow(n, 8) * Math.sin(31 * Math.PI * (n / fs)) + 0.55;
   }
   count() {
     const { data, index, first, second, third, fourth } = this;
