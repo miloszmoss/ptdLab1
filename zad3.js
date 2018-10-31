@@ -30,17 +30,18 @@ class Zad3 extends Base {
   }
   count() {
     const { data, index, first, second, third, fourth } = this;
-    const [step1, step2, step3] = [0.4 * 4000, 0.6 * 4000, 0.8 * 4000];
+    const [step1, step2, step3] = [0.4, 0.6, 0.8];
     for (let i = 0; i < 4000; i++) {
-      index.push(i);
-      if (i < step1) {
-        data.push(first(i));
-      } else if (i >= step1 && i < step2) {
-        data.push(second(i));
-      } else if (i >= step2 && i < step3) {
-        data.push(third(i));
+      let t = i / 4000;
+      index.push(i / 4000);
+      if (t < step1) {
+        data.push(first(t));
+      } else if (t >= step1 && t < step2) {
+        data.push(second(t));
+      } else if (t >= step2 && t < step3) {
+        data.push(third(t));
       } else {
-        data.push(fourth(i));
+        data.push(fourth(t));
       }
     }
   }
