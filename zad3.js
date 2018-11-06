@@ -4,11 +4,11 @@ class Zad3 extends Base {
     super();
     this.index = [];
     this.data = [];
-    this.fs = 4;
+    this.fs = 4000;
     this.trace = {
       x: this.index,
       y: this.data,
-      type: 'scatter'
+      type: 'scatter',
     };
     this.figure = { data: [this.trace] };
     this.second = this.second.bind(this);
@@ -19,7 +19,7 @@ class Zad3 extends Base {
   }
   second(n) {
     const { fs } = this;
-    return -1.8 * n * Math.cos(16 * Math.PI * (n / fs) + Math.PI);
+    return -1.8 * n * Math.cos((16 * Math.PI * n) / fs + Math.PI);
   }
   third(n) {
     return 0.72 * n;
@@ -48,6 +48,10 @@ class Zad3 extends Base {
   init() {
     const { figure, imgOpts, data } = this;
     this.count();
+    console.log(this.fourth(0.8));
+    console.log(this.fourth(0.9));
+    console.log(this.data[0.8 * 4000]);
+    console.log(this.data[0.9 * 4000]);
     this.printPNG(figure, imgOpts, 'charts/zad3.png');
     this.printData('data/zad3.txt', data);
   }
