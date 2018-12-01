@@ -4,7 +4,7 @@
   "description": "",
   "main": "lab1.js",
   "scripts": {
-    "run": "node zad1.js && node zad2.js && node zad3.js"
+    "start": "node zad1.js && node zad2.js && node zad3.js && node zad4.js"
   },
   "author": "",
   "license": "ISC",

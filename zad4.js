@@ -48,7 +48,7 @@ class Zad4 extends Base {
       g,
       indexArray,
       printData,
-      printPNG,
+      printPNG
     } = this;
 
     const size = fs * T;

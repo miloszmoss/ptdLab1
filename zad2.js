@@ -52,7 +52,6 @@ class Zad2 extends Base {
     const { figure1, figure2, imgOpts, zData, vData } = this;
     this.countZ();
     this.countV();
-    console.log(this.v(4));
     this.printPNG(figure1, imgOpts, 'charts/zad2-a.png');
     this.printPNG(figure2, imgOpts, 'charts/zad2-b.png');
     this.printData('data/zad2-a.txt', zData);
