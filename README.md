@@ -1,10 +1,7 @@
-# Podstawy transmisji danych
+# Podstawy transmisji danych (lab1 grupa 31A)
 
-## 1. npm i
+## ~ npm i
 instalacja biblioteki do rysowania wykresow
 
-Gr. 31A
-
-#
-
-Lab1
+## ~ npm run 
+polecenie do wykonania zadań 1,2,3,4
